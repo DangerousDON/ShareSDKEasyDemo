@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E5CF58471A4E9D19006F0552 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CF58461A4E9D19006F0552 /* main.m */; };
+		E5CF584A1A4E9D19006F0552 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CF58491A4E9D19006F0552 /* AppDelegate.m */; };
+		E5CF584D1A4E9D19006F0552 /* ShareSDKEasyDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5CF584B1A4E9D19006F0552 /* ShareSDKEasyDemo.xcdatamodeld */; };
+		E5CF58501A4E9D19006F0552 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CF584F1A4E9D19006F0552 /* ViewController.m */; };
+		E5CF58531A4E9D19006F0552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5CF58511A4E9D19006F0552 /* Main.storyboard */; };
+		E5CF58551A4E9D19006F0552 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5CF58541A4E9D19006F0552 /* Images.xcassets */; };
+		E5CF58581A4E9D19006F0552 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5CF58561A4E9D19006F0552 /* LaunchScreen.xib */; };
+		E5CF58641A4E9D19006F0552 /* ShareSDKEasyDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CF58631A4E9D19006F0552 /* ShareSDKEasyDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5CF585E1A4E9D19006F0552 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5CF58391A4E9D19006F0552 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5CF58401A4E9D19006F0552;
+			remoteInfo = ShareSDKEasyDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E5CF58411A4E9D19006F0552 /* ShareSDKEasyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareSDKEasyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5CF58451A4E9D19006F0552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5CF58461A4E9D19006F0552 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E5CF58481A4E9D19006F0552 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E5CF58491A4E9D19006F0552 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E5CF584C1A4E9D19006F0552 /* ShareSDKEasyDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShareSDKEasyDemo.xcdatamodel; sourceTree = "<group>"; };
+		E5CF584E1A4E9D19006F0552 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E5CF584F1A4E9D19006F0552 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E5CF58521A4E9D19006F0552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E5CF58541A4E9D19006F0552 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E5CF58571A4E9D19006F0552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E5CF585D1A4E9D19006F0552 /* ShareSDKEasyDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareSDKEasyDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5CF58621A4E9D19006F0552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5CF58631A4E9D19006F0552 /* ShareSDKEasyDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareSDKEasyDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5CF583E1A4E9D19006F0552 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5CF585A1A4E9D19006F0552 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E5CF58381A4E9D19006F0552 = {
+			isa = PBXGroup;
+			children = (
+				E5CF58431A4E9D19006F0552 /* ShareSDKEasyDemo */,
+				E5CF58601A4E9D19006F0552 /* ShareSDKEasyDemoTests */,
+				E5CF58421A4E9D19006F0552 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5CF58421A4E9D19006F0552 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5CF58411A4E9D19006F0552 /* ShareSDKEasyDemo.app */,
+				E5CF585D1A4E9D19006F0552 /* ShareSDKEasyDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5CF58431A4E9D19006F0552 /* ShareSDKEasyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E5CF58481A4E9D19006F0552 /* AppDelegate.h */,
+				E5CF58491A4E9D19006F0552 /* AppDelegate.m */,
+				E5CF584E1A4E9D19006F0552 /* ViewController.h */,
+				E5CF584F1A4E9D19006F0552 /* ViewController.m */,
+				E5CF58511A4E9D19006F0552 /* Main.storyboard */,
+				E5CF58541A4E9D19006F0552 /* Images.xcassets */,
+				E5CF58561A4E9D19006F0552 /* LaunchScreen.xib */,
+				E5CF584B1A4E9D19006F0552 /* ShareSDKEasyDemo.xcdatamodeld */,
+				E5CF58441A4E9D19006F0552 /* Supporting Files */,
+			);
+			path = ShareSDKEasyDemo;
+			sourceTree = "<group>";
+		};
+		E5CF58441A4E9D19006F0552 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5CF58451A4E9D19006F0552 /* Info.plist */,
+				E5CF58461A4E9D19006F0552 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E5CF58601A4E9D19006F0552 /* ShareSDKEasyDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5CF58631A4E9D19006F0552 /* ShareSDKEasyDemoTests.m */,
+				E5CF58611A4E9D19006F0552 /* Supporting Files */,
+			);
+			path = ShareSDKEasyDemoTests;
+			sourceTree = "<group>";
+		};
+		E5CF58611A4E9D19006F0552 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5CF58621A4E9D19006F0552 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5CF58401A4E9D19006F0552 /* ShareSDKEasyDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5CF58671A4E9D19006F0552 /* Build configuration list for PBXNativeTarget "ShareSDKEasyDemo" */;
+			buildPhases = (
+				E5CF583D1A4E9D19006F0552 /* Sources */,
+				E5CF583E1A4E9D19006F0552 /* Frameworks */,
+				E5CF583F1A4E9D19006F0552 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareSDKEasyDemo;
+			productName = ShareSDKEasyDemo;
+			productReference = E5CF58411A4E9D19006F0552 /* ShareSDKEasyDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E5CF585C1A4E9D19006F0552 /* ShareSDKEasyDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5CF586A1A4E9D19006F0552 /* Build configuration list for PBXNativeTarget "ShareSDKEasyDemoTests" */;
+			buildPhases = (
+				E5CF58591A4E9D19006F0552 /* Sources */,
+				E5CF585A1A4E9D19006F0552 /* Frameworks */,
+				E5CF585B1A4E9D19006F0552 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5CF585F1A4E9D19006F0552 /* PBXTargetDependency */,
+			);
+			name = ShareSDKEasyDemoTests;
+			productName = ShareSDKEasyDemoTests;
+			productReference = E5CF585D1A4E9D19006F0552 /* ShareSDKEasyDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5CF58391A4E9D19006F0552 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Code4App co.Ltd.";
+				TargetAttributes = {
+					E5CF58401A4E9D19006F0552 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					E5CF585C1A4E9D19006F0552 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = E5CF58401A4E9D19006F0552;
+					};
+				};
+			};
+			buildConfigurationList = E5CF583C1A4E9D19006F0552 /* Build configuration list for PBXProject "ShareSDKEasyDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5CF58381A4E9D19006F0552;
+			productRefGroup = E5CF58421A4E9D19006F0552 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5CF58401A4E9D19006F0552 /* ShareSDKEasyDemo */,
+				E5CF585C1A4E9D19006F0552 /* ShareSDKEasyDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5CF583F1A4E9D19006F0552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5CF58531A4E9D19006F0552 /* Main.storyboard in Resources */,
+				E5CF58581A4E9D19006F0552 /* LaunchScreen.xib in Resources */,
+				E5CF58551A4E9D19006F0552 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5CF585B1A4E9D19006F0552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5CF583D1A4E9D19006F0552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5CF584D1A4E9D19006F0552 /* ShareSDKEasyDemo.xcdatamodeld in Sources */,
+				E5CF584A1A4E9D19006F0552 /* AppDelegate.m in Sources */,
+				E5CF58501A4E9D19006F0552 /* ViewController.m in Sources */,
+				E5CF58471A4E9D19006F0552 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5CF58591A4E9D19006F0552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5CF58641A4E9D19006F0552 /* ShareSDKEasyDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5CF585F1A4E9D19006F0552 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5CF58401A4E9D19006F0552 /* ShareSDKEasyDemo */;
+			targetProxy = E5CF585E1A4E9D19006F0552 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E5CF58511A4E9D19006F0552 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5CF58521A4E9D19006F0552 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E5CF58561A4E9D19006F0552 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5CF58571A4E9D19006F0552 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E5CF58651A4E9D19006F0552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E5CF58661A4E9D19006F0552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5CF58681A4E9D19006F0552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ShareSDKEasyDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E5CF58691A4E9D19006F0552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ShareSDKEasyDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E5CF586B1A4E9D19006F0552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShareSDKEasyDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShareSDKEasyDemo.app/ShareSDKEasyDemo";
+			};
+			name = Debug;
+		};
+		E5CF586C1A4E9D19006F0552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShareSDKEasyDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShareSDKEasyDemo.app/ShareSDKEasyDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5CF583C1A4E9D19006F0552 /* Build configuration list for PBXProject "ShareSDKEasyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5CF58651A4E9D19006F0552 /* Debug */,
+				E5CF58661A4E9D19006F0552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5CF58671A4E9D19006F0552 /* Build configuration list for PBXNativeTarget "ShareSDKEasyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5CF58681A4E9D19006F0552 /* Debug */,
+				E5CF58691A4E9D19006F0552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E5CF586A1A4E9D19006F0552 /* Build configuration list for PBXNativeTarget "ShareSDKEasyDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5CF586B1A4E9D19006F0552 /* Debug */,
+				E5CF586C1A4E9D19006F0552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E5CF584B1A4E9D19006F0552 /* ShareSDKEasyDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E5CF584C1A4E9D19006F0552 /* ShareSDKEasyDemo.xcdatamodel */,
+			);
+			currentVersion = E5CF584C1A4E9D19006F0552 /* ShareSDKEasyDemo.xcdatamodel */;
+			path = ShareSDKEasyDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E5CF58391A4E9D19006F0552 /* Project object */;
+}
