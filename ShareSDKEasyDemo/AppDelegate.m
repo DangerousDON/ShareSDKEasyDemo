@@ -7,7 +7,13 @@
 //
 
 #import "AppDelegate.h"
-
+#import <ShareSDK/ShareSDK.h>
+#import "WeiboApi.h"
+#import "WeiboSDK.h"
+#import <TencentOpenAPI/QQApiInterface.h>
+#import <TencentOpenAPI/TencentOAuth.h>
+#import "WXApi.h"
+#import <RennSDK/RennSDK.h>
 @interface AppDelegate ()
 
 @end
@@ -16,10 +22,97 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //1.初始化ShareSDK应用,字符串"4a88b2fb067c"换成你申请的ShareSDK应用的Appkey，这个key来源于ShareSDK官网上申请获得
+    [ShareSDK registerApp:@"3df7a36158b2"];
+    
+    //2. 初始化社交平台
+    [self initializePlat];
+    
     return YES;
 }
 
+- (void)initializePlat
+{
+    //初始化新浪，在新浪微博开放平台上申请应用
+    [ShareSDK connectSinaWeiboWithAppKey:@"568898243" appSecret:@"38a4f8204cc784f81f9f0daaf31e02e3" redirectUri:@"http://www.sharesdk.cn" weiboSDKCls:[WeiboSDK class]];
+    //上面的方法会又客户端跳客户端，没客户端条web.
+    
+    //下面这方法，如果不想用新浪客户端授权只用web的话就可以使用。
+    //[ShareSDK connectSinaWeiboWithAppKey:<#(NSString *)#> appSecret:<#(NSString *)#> redirectUri:<#(NSString *)#>]
+/**---------------------------------------------------------**/
+    //初始化腾讯微博，请在腾讯微博开放平台申请
+    [ShareSDK connectTencentWeiboWithAppKey:@"801307650"
+                                  appSecret:@"ae36f4ee3946e1cbb98d6965b0b2ff5c"
+                                redirectUri:@"http://www.sharesdk.cn"
+                                   wbApiCls:[WeiboApi class]];
+    /**
+     跟新浪一样如要求只用web授权那么用下面的
+    [ShareSDK connectTencentWeiboWithAppKey:<#(NSString *)#> appSecret:<#(NSString *)#> redirectUri:<#(NSString *)#>]
+     **/
+    
+/**---------------------------------------------------------**/
+    //初始化人人网，在人人网开放平台上申请
+    [ShareSDK connectRenRenWithAppId:@"226427" appKey:@"fc5b8aed373c4c27a05b712acba0f8c3" appSecret:@"f29df781abdd4f49beca5a2194676ca4" renrenClientClass:[RennClient class]];
+/**---------------------------------------------------------**/
+    //初始化微信，微信开放平台上注册应用
+    [ShareSDK connectWeChatWithAppId:@"wx4868b35061f87885"
+                           appSecret:@"64020361b8ec4c99936c0e3999a9f249"
+                           wechatCls:[WXApi class]];
+    
+    //如果在分享菜单中想取消微信收藏，可以初始化微信及微信朋友圈，取代上面整体初始化的方法
+    //微信好友[ShareSDK connectWeChatSessionWithAppId:<#(NSString *)#> appSecret:<#(NSString *)#> wechatCls:<#(__unsafe_unretained Class)#>]
+    //微信朋友圈[ShareSDK connectWeChatTimelineWithAppId:<#(NSString *)#> appSecret:<#(NSString *)#> wechatCls:<#(__unsafe_unretained Class)#>]
+/**---------------------------------------------------------**/
+    //初始化QQ,QQ空间，使用同样的key，请在腾讯开放平台上申请，注意导入头文件：
+    /**
+     #import <TencentOpenAPI/QQApiInterface.h>
+     #import <TencentOpenAPI/TencentOAuth.h>
+    **/
+    
+    //连接QQ应用
+    [ShareSDK connectQQWithQZoneAppKey:@"100371282"
+                     qqApiInterfaceCls:[QQApiInterface class]
+                       tencentOAuthCls:[TencentOAuth class]];
+    //连接QQ空间应用
+    [ShareSDK connectQZoneWithAppKey:@"100371282"
+                           appSecret:@"aed9b0303e3ed1e27bae87c33761161d"
+                   qqApiInterfaceCls:[QQApiInterface class]
+                     tencentOAuthCls:[TencentOAuth class]];
+/**---------------------------------------------------------**/
+    //初始化Facebook,在https://developers.facebook.com上注册应用
+    [ShareSDK connectFacebookWithAppKey:@"107704292745179"
+                              appSecret:@"38053202e1a5fe26c80c753071f0b573"];
+/**---------------------------------------------------------**/
+    //初始化Twitter,在https://dev.twitter.com上注册应用
+    [ShareSDK connectTwitterWithConsumerKey:@"LRBM0H75rWrU9gNHvlEAA2aOy"
+                             consumerSecret:@"gbeWsZvA9ELJSdoBzJ5oLKX0TU09UOwrzdGfo9Tg7DjyGuMe8G"
+                                redirectUri:@"http://mob.com"];
+    
+/**---------------------------------------------------------**/
+    //连接邮件
+    [ShareSDK connectMail];
+    //连接短信
+    [ShareSDK connectSMS];
+}
+
+//添加两个回调方法,return的必须要ShareSDK的方法
+- (BOOL)application:(UIApplication *)application
+      handleOpenURL:(NSURL *)url
+{
+    return [ShareSDK handleOpenURL:url
+                        wxDelegate:self];
+}
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    return [ShareSDK handleOpenURL:url
+                 sourceApplication:sourceApplication
+                        annotation:annotation
+                        wxDelegate:self];
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
