@@ -239,13 +239,13 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cSH-VU-58s">
                                 <rect key="frame" x="255" y="427" width="51" height="31"/>
                                 <connections>
-                                    <action selector="FacebookSpaceAllowWeb:" destination="vXZ-lx-hvc" eventType="valueChanged" id="ZzL-B0-Zoh"/>
+                                    <action selector="FacebookSpaceAllowWeb:" destination="vXZ-lx-hvc" eventType="valueChanged" id="DkB-dM-zSh"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Omr-je-fOp">
                                 <rect key="frame" x="104" y="427" width="51" height="31"/>
                                 <connections>
-                                    <action selector="QQSpaceAllowWeb:" destination="vXZ-lx-hvc" eventType="valueChanged" id="u73-xD-tra"/>
+                                    <action selector="QQSpaceAllowWeb:" destination="vXZ-lx-hvc" eventType="valueChanged" id="aA0-7q-fvE"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOK-y3-puR">

@@ -169,7 +169,32 @@
     [ShareSDK cancelAuthWithType:ShareTypeQQSpace];
     [ShareSDK cancelAuthWithType:ShareTypeFacebook];
     [ShareSDK cancelAuthWithType:ShareTypeTwitter];
+}
+
+
+- (IBAction)QQSpaceAllowWeb:(UISwitch *)sender {
+    //开启QQ空间网页授权开关
+    //注意导入头文件<QZoneConnection/ISSQZoneApp.h>
+    id<ISSQZoneApp> app =(id<ISSQZoneApp>)[ShareSDK getClientWithType:ShareTypeQQSpace];
+    if (sender.on) {
+        [app setIsAllowWebAuthorize:YES];
+    }else{
+        [app setIsAllowWebAuthorize:NO];
     }
+    
+    
+}
+- (IBAction)FacebookSpaceAllowWeb:(UISwitch *)sender {
+    //开启Facebook网页授权开关
+    //注意导入头文件<FacebookConnection/ISSFacebookApp.h>
+    id<ISSFacebookApp> facebookApp =(id<ISSFacebookApp>)[ShareSDK getClientWithType:ShareTypeFacebook];
+    if (sender.on) {
+        [facebookApp setIsAllowWebAuthorize:YES];
+    }else{
+        [facebookApp setIsAllowWebAuthorize:NO];
+    }
+    
+}
 
 
 @end
