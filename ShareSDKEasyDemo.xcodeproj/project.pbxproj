@@ -33,7 +33,6 @@
 		E5E055911A8C5097003784E5 /* RenRenConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E0553B1A8C5096003784E5 /* RenRenConnection.framework */; };
 		E5E055921A8C5097003784E5 /* SinaWeiboConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E0553C1A8C5096003784E5 /* SinaWeiboConnection.framework */; };
 		E5E055951A8C5097003784E5 /* TencentWeiboConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E0553F1A8C5096003784E5 /* TencentWeiboConnection.framework */; };
-		E5E055971A8C5097003784E5 /* TwitterConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E055411A8C5096003784E5 /* TwitterConnection.framework */; };
 		E5E055991A8C5097003784E5 /* WeChatConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E055431A8C5096003784E5 /* WeChatConnection.framework */; };
 		E5E0559D1A8C5097003784E5 /* AGCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E055481A8C5096003784E5 /* AGCommon.framework */; };
 		E5E0559E1A8C5097003784E5 /* ShareSDKLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E5E055491A8C5096003784E5 /* ShareSDKLocalizable.strings */; };
@@ -61,6 +60,7 @@
 		E5E055BA1A8C5098003784E5 /* ShareSDKiPhoneSimpleShareViewUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E055791A8C5097003784E5 /* ShareSDKiPhoneSimpleShareViewUI.framework */; };
 		E5E055BB1A8C5098003784E5 /* ShareSDKShareActionSheet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E0557A1A8C5097003784E5 /* ShareSDKShareActionSheet.framework */; };
 		E5E055BE1A8C51C2003784E5 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E055BC1A8C5196003784E5 /* ImageIO.framework */; };
+		E5EC30591AB92AFA002DE547 /* TwitterConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EC30581AB92AFA002DE547 /* TwitterConnection.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,7 +106,6 @@
 		E5E0553B1A8C5096003784E5 /* RenRenConnection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RenRenConnection.framework; sourceTree = "<group>"; };
 		E5E0553C1A8C5096003784E5 /* SinaWeiboConnection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SinaWeiboConnection.framework; sourceTree = "<group>"; };
 		E5E0553F1A8C5096003784E5 /* TencentWeiboConnection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentWeiboConnection.framework; sourceTree = "<group>"; };
-		E5E055411A8C5096003784E5 /* TwitterConnection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterConnection.framework; sourceTree = "<group>"; };
 		E5E055431A8C5096003784E5 /* WeChatConnection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WeChatConnection.framework; sourceTree = "<group>"; };
 		E5E055481A8C5096003784E5 /* AGCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AGCommon.framework; sourceTree = "<group>"; };
 		E5E0554A1A8C5096003784E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ShareSDKLocalizable.strings; sourceTree = "<group>"; };
@@ -140,6 +139,7 @@
 		E5E055791A8C5097003784E5 /* ShareSDKiPhoneSimpleShareViewUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKiPhoneSimpleShareViewUI.framework; sourceTree = "<group>"; };
 		E5E0557A1A8C5097003784E5 /* ShareSDKShareActionSheet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKShareActionSheet.framework; sourceTree = "<group>"; };
 		E5E055BC1A8C5196003784E5 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		E5EC30581AB92AFA002DE547 /* TwitterConnection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterConnection.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +150,6 @@
 				E5E055BE1A8C51C2003784E5 /* ImageIO.framework in Frameworks */,
 				E5CF591C1A527D51006F0552 /* Social.framework in Frameworks */,
 				E5E055921A8C5097003784E5 /* SinaWeiboConnection.framework in Frameworks */,
-				E5E055971A8C5097003784E5 /* TwitterConnection.framework in Frameworks */,
 				E5E055A91A8C5097003784E5 /* RennSDK.framework in Frameworks */,
 				E5E055B31A8C5098003784E5 /* ShareSDKiPadDefaultShareViewUI.framework in Frameworks */,
 				E5E055BA1A8C5098003784E5 /* ShareSDKiPhoneSimpleShareViewUI.framework in Frameworks */,
@@ -164,6 +163,7 @@
 				E5E055911A8C5097003784E5 /* RenRenConnection.framework in Frameworks */,
 				E5CF59171A527D0E006F0552 /* libstdc++.dylib in Frameworks */,
 				E5E055A01A8C5097003784E5 /* ShareSDKCoreService.framework in Frameworks */,
+				E5EC30591AB92AFA002DE547 /* TwitterConnection.framework in Frameworks */,
 				E5E0559D1A8C5097003784E5 /* AGCommon.framework in Frameworks */,
 				E5CF59131A527CAA006F0552 /* Security.framework in Frameworks */,
 				E5E055B61A8C5098003784E5 /* ShareSDKiPhoneAppRecommendShareViewUI.framework in Frameworks */,
@@ -317,13 +317,13 @@
 		E5E055241A8C5096003784E5 /* Connection */ = {
 			isa = PBXGroup;
 			children = (
+				E5EC30581AB92AFA002DE547 /* TwitterConnection.framework */,
 				E5E055291A8C5096003784E5 /* FacebookConnection.framework */,
 				E5E055391A8C5096003784E5 /* QQConnection.framework */,
 				E5E0553A1A8C5096003784E5 /* QZoneConnection.framework */,
 				E5E0553B1A8C5096003784E5 /* RenRenConnection.framework */,
 				E5E0553C1A8C5096003784E5 /* SinaWeiboConnection.framework */,
 				E5E0553F1A8C5096003784E5 /* TencentWeiboConnection.framework */,
-				E5E055411A8C5096003784E5 /* TwitterConnection.framework */,
 				E5E055431A8C5096003784E5 /* WeChatConnection.framework */,
 			);
 			path = Connection;
