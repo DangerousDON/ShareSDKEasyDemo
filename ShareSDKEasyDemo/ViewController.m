@@ -67,6 +67,10 @@
     //1.定制分享的内容
     NSString* path = [[NSBundle mainBundle]pathForResource:@"ShareSDK" ofType:@"jpg"];
     id<ISSContent> publishContent = [ShareSDK content:@"Hello,Code4App.com!" defaultContent:nil image:[ShareSDK imageWithPath:path] title:@"This is title" url:@"http://mob.com" description:@"This is description" mediaType:SSPublishContentMediaTypeNews];
+    
+    // 定制新浪微博的分享信息
+    [publishContent addSinaWeiboUnitWithContent:@"定制新浪微博的分享信息" image:[ShareSDK imageWithPath:path]];
+    
     //2.分享
     [ShareSDK showShareViewWithType:type container:nil content:publishContent statusBarTips:YES authOptions:nil shareOptions:nil result:^(ShareType type, SSResponseState state, id<ISSPlatformShareInfo> statusInfo, id<ICMErrorInfo> error, BOOL end) {
         //如果分享成功
@@ -151,6 +155,7 @@
             [alert show];
             NSLog(@"source:%@",[userInfo sourceData]);
             NSLog(@"uid:%@",[userInfo uid]);
+            NSLog(@"获取授权凭证--access_toekn:%@",[[userInfo credential]token]);
             
 
         }else{

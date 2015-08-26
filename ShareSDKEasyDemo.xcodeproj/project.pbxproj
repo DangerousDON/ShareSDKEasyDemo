@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C844AAF21B8D7D210066926E /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C844AAF11B8D7D210066926E /* JavaScriptCore.framework */; };
+		C844AAF41B8D7EAC0066926E /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C844AAF31B8D7EAC0066926E /* MOBFoundation.framework */; };
 		E5CF58471A4E9D19006F0552 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CF58461A4E9D19006F0552 /* main.m */; };
 		E5CF584A1A4E9D19006F0552 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CF58491A4E9D19006F0552 /* AppDelegate.m */; };
 		E5CF584D1A4E9D19006F0552 /* ShareSDKEasyDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5CF584B1A4E9D19006F0552 /* ShareSDKEasyDemo.xcdatamodeld */; };
@@ -14,7 +16,6 @@
 		E5CF58531A4E9D19006F0552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5CF58511A4E9D19006F0552 /* Main.storyboard */; };
 		E5CF58551A4E9D19006F0552 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5CF58541A4E9D19006F0552 /* Images.xcassets */; };
 		E5CF58581A4E9D19006F0552 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5CF58561A4E9D19006F0552 /* LaunchScreen.xib */; };
-		E5CF58641A4E9D19006F0552 /* ShareSDKEasyDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CF58631A4E9D19006F0552 /* ShareSDKEasyDemoTests.m */; };
 		E5CF59091A527C71006F0552 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5CF59081A527C71006F0552 /* SystemConfiguration.framework */; };
 		E5CF590B1A527C7C006F0552 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5CF590A1A527C7C006F0552 /* QuartzCore.framework */; };
 		E5CF590D1A527C88006F0552 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5CF590C1A527C88006F0552 /* CoreTelephony.framework */; };
@@ -44,7 +45,6 @@
 		E5E055A91A8C5097003784E5 /* RennSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E0555C1A8C5097003784E5 /* RennSDK.framework */; };
 		E5E055AA1A8C5097003784E5 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E0555E1A8C5097003784E5 /* libWeiboSDK.a */; };
 		E5E055AB1A8C5097003784E5 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E5E0555F1A8C5097003784E5 /* WeiboSDK.bundle */; };
-		E5E055AC1A8C5097003784E5 /* libTCWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E055621A8C5097003784E5 /* libTCWeiboSDK.a */; };
 		E5E055AD1A8C5097003784E5 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E055661A8C5097003784E5 /* libWeChatSDK.a */; };
 		E5E055AF1A8C5097003784E5 /* ShareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E0556D1A8C5097003784E5 /* ShareSDK.framework */; };
 		E5E055B01A8C5097003784E5 /* ShareSDKFlatShareViewUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E5E0556F1A8C5097003784E5 /* ShareSDKFlatShareViewUI.bundle */; };
@@ -63,17 +63,9 @@
 		E5EC30591AB92AFA002DE547 /* TwitterConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EC30581AB92AFA002DE547 /* TwitterConnection.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		E5CF585E1A4E9D19006F0552 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E5CF58391A4E9D19006F0552 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E5CF58401A4E9D19006F0552;
-			remoteInfo = ShareSDKEasyDemo;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		C844AAF11B8D7D210066926E /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		C844AAF31B8D7EAC0066926E /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
 		E5CF58411A4E9D19006F0552 /* ShareSDKEasyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareSDKEasyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5CF58451A4E9D19006F0552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5CF58461A4E9D19006F0552 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,9 +77,6 @@
 		E5CF58521A4E9D19006F0552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5CF58541A4E9D19006F0552 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E5CF58571A4E9D19006F0552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		E5CF585D1A4E9D19006F0552 /* ShareSDKEasyDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareSDKEasyDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5CF58621A4E9D19006F0552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5CF58631A4E9D19006F0552 /* ShareSDKEasyDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareSDKEasyDemoTests.m; sourceTree = "<group>"; };
 		E5CF59081A527C71006F0552 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E5CF590A1A527C7C006F0552 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E5CF590C1A527C88006F0552 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -119,9 +108,6 @@
 		E5E0555E1A8C5097003784E5 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
 		E5E0555F1A8C5097003784E5 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
 		E5E055601A8C5097003784E5 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
-		E5E055621A8C5097003784E5 /* libTCWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTCWeiboSDK.a; sourceTree = "<group>"; };
-		E5E055631A8C5097003784E5 /* WeiboApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboApi.h; sourceTree = "<group>"; };
-		E5E055641A8C5097003784E5 /* WeiboApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboApiObject.h; sourceTree = "<group>"; };
 		E5E055661A8C5097003784E5 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		E5E055671A8C5097003784E5 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		E5E055681A8C5097003784E5 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
@@ -147,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C844AAF21B8D7D210066926E /* JavaScriptCore.framework in Frameworks */,
 				E5E055BE1A8C51C2003784E5 /* ImageIO.framework in Frameworks */,
 				E5CF591C1A527D51006F0552 /* Social.framework in Frameworks */,
 				E5E055921A8C5097003784E5 /* SinaWeiboConnection.framework in Frameworks */,
@@ -170,10 +157,10 @@
 				E5E055901A8C5097003784E5 /* QZoneConnection.framework in Frameworks */,
 				E5CF59111A527CA0006F0552 /* libz.1.2.5.dylib in Frameworks */,
 				E5CF590F1A527C94006F0552 /* libicucore.dylib in Frameworks */,
+				C844AAF41B8D7EAC0066926E /* MOBFoundation.framework in Frameworks */,
 				E5E055BB1A8C5098003784E5 /* ShareSDKShareActionSheet.framework in Frameworks */,
 				E5E055B51A8C5098003784E5 /* ShareSDKiPadSimpleShareViewUI.framework in Frameworks */,
 				E5E055A61A8C5097003784E5 /* TencentOpenAPI.framework in Frameworks */,
-				E5E055AC1A8C5097003784E5 /* libTCWeiboSDK.a in Frameworks */,
 				E5CF590D1A527C88006F0552 /* CoreTelephony.framework in Frameworks */,
 				E5E055991A8C5097003784E5 /* WeChatConnection.framework in Frameworks */,
 				E5CF590B1A527C7C006F0552 /* QuartzCore.framework in Frameworks */,
@@ -185,13 +172,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5CF585A1A4E9D19006F0552 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -199,7 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				E5CF58431A4E9D19006F0552 /* ShareSDKEasyDemo */,
-				E5CF58601A4E9D19006F0552 /* ShareSDKEasyDemoTests */,
 				E5CF58421A4E9D19006F0552 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -208,7 +187,6 @@
 			isa = PBXGroup;
 			children = (
 				E5CF58411A4E9D19006F0552 /* ShareSDKEasyDemo.app */,
-				E5CF585D1A4E9D19006F0552 /* ShareSDKEasyDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -241,26 +219,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E5CF58601A4E9D19006F0552 /* ShareSDKEasyDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				E5CF58631A4E9D19006F0552 /* ShareSDKEasyDemoTests.m */,
-				E5CF58611A4E9D19006F0552 /* Supporting Files */,
-			);
-			path = ShareSDKEasyDemoTests;
-			sourceTree = "<group>";
-		};
-		E5CF58611A4E9D19006F0552 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E5CF58621A4E9D19006F0552 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		E5CF59141A527CCA006F0552 /* BasicFramework */ = {
 			isa = PBXGroup;
 			children = (
+				C844AAF11B8D7D210066926E /* JavaScriptCore.framework */,
 				E5E055BC1A8C5196003784E5 /* ImageIO.framework */,
 				E5CF591F1A527D5E006F0552 /* SMSEmailNeedFramework */,
 				E5CF591A1A527D27006F0552 /* TencentWeiboNeedFramework */,
@@ -332,6 +294,7 @@
 		E5E055471A8C5096003784E5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				C844AAF31B8D7EAC0066926E /* MOBFoundation.framework */,
 				E5E055481A8C5096003784E5 /* AGCommon.framework */,
 				E5E055491A8C5096003784E5 /* ShareSDKLocalizable.strings */,
 				E5E0554B1A8C5096003784E5 /* Resource.bundle */,
@@ -346,7 +309,6 @@
 				E5E055571A8C5096003784E5 /* QQConnectSDK */,
 				E5E0555A1A8C5096003784E5 /* RenRenSDK */,
 				E5E0555D1A8C5097003784E5 /* SinaWeiboSDK */,
-				E5E055611A8C5097003784E5 /* TencentWeiboSDK */,
 				E5E055651A8C5097003784E5 /* WeChatSDK */,
 			);
 			path = Extend;
@@ -378,16 +340,6 @@
 				E5E055601A8C5097003784E5 /* WeiboSDK.h */,
 			);
 			path = SinaWeiboSDK;
-			sourceTree = "<group>";
-		};
-		E5E055611A8C5097003784E5 /* TencentWeiboSDK */ = {
-			isa = PBXGroup;
-			children = (
-				E5E055621A8C5097003784E5 /* libTCWeiboSDK.a */,
-				E5E055631A8C5097003784E5 /* WeiboApi.h */,
-				E5E055641A8C5097003784E5 /* WeiboApiObject.h */,
-			);
-			path = TencentWeiboSDK;
 			sourceTree = "<group>";
 		};
 		E5E055651A8C5097003784E5 /* WeChatSDK */ = {
@@ -439,24 +391,6 @@
 			productReference = E5CF58411A4E9D19006F0552 /* ShareSDKEasyDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E5CF585C1A4E9D19006F0552 /* ShareSDKEasyDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E5CF586A1A4E9D19006F0552 /* Build configuration list for PBXNativeTarget "ShareSDKEasyDemoTests" */;
-			buildPhases = (
-				E5CF58591A4E9D19006F0552 /* Sources */,
-				E5CF585A1A4E9D19006F0552 /* Frameworks */,
-				E5CF585B1A4E9D19006F0552 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E5CF585F1A4E9D19006F0552 /* PBXTargetDependency */,
-			);
-			name = ShareSDKEasyDemoTests;
-			productName = ShareSDKEasyDemoTests;
-			productReference = E5CF585D1A4E9D19006F0552 /* ShareSDKEasyDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -468,10 +402,6 @@
 				TargetAttributes = {
 					E5CF58401A4E9D19006F0552 = {
 						CreatedOnToolsVersion = 6.1;
-					};
-					E5CF585C1A4E9D19006F0552 = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = E5CF58401A4E9D19006F0552;
 					};
 				};
 			};
@@ -490,7 +420,6 @@
 			projectRoot = "";
 			targets = (
 				E5CF58401A4E9D19006F0552 /* ShareSDKEasyDemo */,
-				E5CF585C1A4E9D19006F0552 /* ShareSDKEasyDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -517,13 +446,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5CF585B1A4E9D19006F0552 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -538,23 +460,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5CF58591A4E9D19006F0552 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5CF58641A4E9D19006F0552 /* ShareSDKEasyDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E5CF585F1A4E9D19006F0552 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E5CF58401A4E9D19006F0552 /* ShareSDKEasyDemo */;
-			targetProxy = E5CF585E1A4E9D19006F0552 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E5CF58511A4E9D19006F0552 /* Main.storyboard */ = {
@@ -688,7 +594,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShareSDKEasyDemo/ShareSDK/Extend/SinaWeiboSDK",
-					"$(PROJECT_DIR)/ShareSDKEasyDemo/ShareSDK/Extend/TencentWeiboSDK",
 					"$(PROJECT_DIR)/ShareSDKEasyDemo/ShareSDK/Extend/WeChatSDK",
 				);
 				OTHER_LDFLAGS = "-ObjC";
@@ -720,46 +625,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShareSDKEasyDemo/ShareSDK/Extend/SinaWeiboSDK",
-					"$(PROJECT_DIR)/ShareSDKEasyDemo/ShareSDK/Extend/TencentWeiboSDK",
 					"$(PROJECT_DIR)/ShareSDKEasyDemo/ShareSDK/Extend/WeChatSDK",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-			};
-			name = Release;
-		};
-		E5CF586B1A4E9D19006F0552 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ShareSDKEasyDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShareSDKEasyDemo.app/ShareSDKEasyDemo";
-			};
-			name = Debug;
-		};
-		E5CF586C1A4E9D19006F0552 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ShareSDKEasyDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShareSDKEasyDemo.app/ShareSDKEasyDemo";
 			};
 			name = Release;
 		};
@@ -780,15 +650,6 @@
 			buildConfigurations = (
 				E5CF58681A4E9D19006F0552 /* Debug */,
 				E5CF58691A4E9D19006F0552 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E5CF586A1A4E9D19006F0552 /* Build configuration list for PBXNativeTarget "ShareSDKEasyDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E5CF586B1A4E9D19006F0552 /* Debug */,
-				E5CF586C1A4E9D19006F0552 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

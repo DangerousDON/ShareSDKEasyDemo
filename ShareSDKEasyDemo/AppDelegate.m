@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import <ShareSDK/ShareSDK.h>
-#import "WeiboApi.h"
 #import "WeiboSDK.h"
 #import <TencentOpenAPI/QQApiInterface.h>
 #import <TencentOpenAPI/TencentOAuth.h>
@@ -27,7 +26,7 @@
     
     //2. 初始化社交平台
     [self initializePlat];
-    
+    NSLog(@"sharesdkVer:%@",[ShareSDK version]);
     return YES;
 }
 
@@ -35,20 +34,14 @@
 {
     //初始化新浪，在新浪微博开放平台上申请应用
     [ShareSDK connectSinaWeiboWithAppKey:@"568898243" appSecret:@"38a4f8204cc784f81f9f0daaf31e02e3" redirectUri:@"http://www.sharesdk.cn" weiboSDKCls:[WeiboSDK class]];
-    //上面的方法会又客户端跳客户端，没客户端条web.
+    //上面的方法会如果需要在授权的时候设定scope,或者需要跳到新浪的客户分享的话，需要导入WeiboSDK.
     
-    //下面这方法，如果不想用新浪客户端授权只用web的话就可以使用。
+    //下面这方法，一般情况下均可使用。
     //[ShareSDK connectSinaWeiboWithAppKey:<#(NSString *)#> appSecret:<#(NSString *)#> redirectUri:<#(NSString *)#>]
 /**---------------------------------------------------------**/
-    //初始化腾讯微博，请在腾讯微博开放平台申请
-    [ShareSDK connectTencentWeiboWithAppKey:@"801307650"
-                                  appSecret:@"ae36f4ee3946e1cbb98d6965b0b2ff5c"
-                                redirectUri:@"http://www.sharesdk.cn"
-                                   wbApiCls:[WeiboApi class]];
-    /**
-     跟新浪一样如要求只用web授权那么用下面的
-    [ShareSDK connectTencentWeiboWithAppKey:<#(NSString *)#> appSecret:<#(NSString *)#> redirectUri:<#(NSString *)#>]
-     **/
+    
+    //初始化腾讯微博，请在腾讯微博开放平台申请,腾讯微博客户端已经不支持，现在腾讯微博只可以使用网页授权
+    [ShareSDK connectTencentWeiboWithAppKey:@"801307650" appSecret:@"ae36f4ee3946e1cbb98d6965b0b2ff5c" redirectUri:@"http://www.sharesdk.cn"];
     
 /**---------------------------------------------------------**/
     //初始化人人网，在人人网开放平台上申请
@@ -90,12 +83,12 @@
     
 /**---------------------------------------------------------**/
     //连接邮件
-    [ShareSDK connectMail];
+    //[ShareSDK connectMail];
     //连接短信
-    [ShareSDK connectSMS];
+    //[ShareSDK connectSMS];
 }
 
-//添加两个回调方法,return的必须要ShareSDK的方法
+//添加两个回调方法,return的必须要ShareSDK的方法。如果要支持微信支付，请通过回调返回的url来判断
 - (BOOL)application:(UIApplication *)application
       handleOpenURL:(NSURL *)url
 {
